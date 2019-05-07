@@ -598,7 +598,7 @@ describe('AtomApplication', function () {
           assert.notStrictEqual(uw, w0)
           assert.strictEqual(
             uw.loadSettings.windowInitializationScript,
-            path.resolve(__dirname, '../../src/initialize-application-window.coffee')
+            path.resolve(__dirname, '../../src/initialize-application-window')
           )
 
           uw.emit('window:loaded')
